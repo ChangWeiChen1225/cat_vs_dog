@@ -2,6 +2,7 @@
 1. 複製專案: `git clone https://github.com/ChangWeiChen1225/cat_vs_dog.git`
 2. 進到專案: `cd cat_vs_dog`
 3. 安裝環境: `pip install -r requirements.txt`
+4. 下載資料集: https://www.kaggle.com/competitions/dogs-vs-cats/data
 
 ## 如何執行
 #### 執行自動化腳本即可完成資料準備-->訓練-->驗證：
