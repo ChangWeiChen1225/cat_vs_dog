@@ -1,5 +1,5 @@
 ## 安裝步驟
-1. 複製專案: `git clone <repo_url>`
+1. 複製專案: `git clone https://github.com/ChangWeiChen1225/cat_vs_dog.git`
 2. 安裝環境: `pip install -r requirements.txt`
 
 ## 如何執行
