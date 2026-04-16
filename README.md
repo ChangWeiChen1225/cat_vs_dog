@@ -5,10 +5,28 @@
 4. 下載資料集: https://www.kaggle.com/competitions/dogs-vs-cats/data (務必將.zip檔放到專案資料夾)
 
 ## 如何執行
-#### 執行自動化腳本即可完成資料準備-->訓練-->驗證：
+#### Option 1. 執行自動化腳本即可完成資料準備-->訓練-->驗證：
 ```
 bash run.sh
 ```
+#### Option 2. 輸入以下指令依序完成：
+* 建置環境
+```
+pip install -r requirements.txt
+```
+* 資料準備
+```
+python data_setup.py --src_train_dir train --base_dir data --split_ratio 0.1 --seed 42
+```
+* 進行訓練
+```
+python train.py --epochs 15 --batch_size 128 --lr 0.001 --save_path ./checkpoints/best_model.pth
+```
+* 進行測試集驗證
+```
+python eval.py --model_path ./checkpoints/best_model.pth
+```
+
 #### 1. 資料準備 (Data setup)
 * 由於test1資料集並沒有提供label，因此需要從train資料集中分出train set、val set、test set
 * 資料切分比例 train : val : test = 8 : 1 : 1
