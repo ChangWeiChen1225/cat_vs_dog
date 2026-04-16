@@ -3,6 +3,14 @@
 2. 進到專案: `cd cat_vs_dog`
 3. 安裝環境: `pip install -r requirements.txt`
 4. 下載資料集: https://www.kaggle.com/competitions/dogs-vs-cats/data (務必將.zip檔放到專案資料夾)
+    * 或在本地端利用kaggle金鑰下載:
+      * Get your own kaggle.json from Kaggle Settings.
+      * Doenload kaggle.json.
+      * Run bash data_download.sh to automatically download the dataset.
+      ```
+      bash data_download.sh
+      ```
+
 
 ## 如何執行
 #### Option 1. 執行自動化腳本即可完成資料準備-->訓練-->驗證：
