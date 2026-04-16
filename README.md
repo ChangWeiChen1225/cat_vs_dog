@@ -84,7 +84,7 @@ project
 *觀察：模型在第 5 個 Epoch 達到收斂，驗證集準確率約為 99.3%。*
 
 **Evaluation performance**
-![test set performance](test_set_performance.png)<br>
+![test set performance](test_set_performance.PNG)<br>
 **高度泛化能力**：在完全未見過的測試資料上取得 99% 的準確率，顯示模型具備優異的泛化能力。<br>
 **極致的類別平衡**：測試集樣本分佈平均 (1250:1250)，且兩類別的 F1-Score 均為 0.99，模型對貓與狗的特徵辨識能力相當均衡，無明顯類別偏見。
 
