@@ -27,6 +27,7 @@ python train.py --epochs 15 --batch_size 128 --lr 0.001 --save_path ./checkpoint
 python eval.py --model_path ./checkpoints/best_model.pth
 ```
 
+## 步驟說明
 #### 1. 資料準備 (Data setup)
 * 由於test1資料集並沒有提供label，因此需要從train資料集中分出train set、val set、test set
 * 資料切分比例 train : val : test = 8 : 1 : 1
