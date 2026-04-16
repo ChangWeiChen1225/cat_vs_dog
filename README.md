@@ -79,20 +79,20 @@ project
   * ReduceLROnPlateau 會監控 Validation Loss，當損失不再下降時自動調低學習率，能讓模型在最後階段更精細地更新權重。
 
 ## 實驗結果 (Results)
-**Learning_curves**
+**Learning_curves**<br>
 ![Learning Curves](learning_curves.png)<br>
 *觀察：模型在第 5 個 Epoch 達到收斂，驗證集準確率約為 99.3%。*
 
-**Evaluation performance**
+**Evaluation performance**<br>
 ![test set performance](test_set_performance.PNG)<br>
 **高度泛化能力**：在完全未見過的測試資料上取得 99% 的準確率，顯示模型具備優異的泛化能力。<br>
 **極致的類別平衡**：測試集樣本分佈平均 (1250:1250)，且兩類別的 F1-Score 均為 0.99，模型對貓與狗的特徵辨識能力相當均衡，無明顯類別偏見。
 
-**Confusion metrix**
+**Confusion metrix**<br>
 ![confusion metrix](confusion_matrix.png)<br>
 *觀察：利用 Confusion matrix 可以看出各類別的錯判狀況。*
 
-**ROC curve**
+**ROC curve**<br>
 ![roc curve](roc_curve.png)<br>
 *觀察：利用計算 ROC curve 的曲線下面積得出 AUC 約等於 1。*
 
