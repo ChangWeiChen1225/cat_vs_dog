@@ -20,4 +20,12 @@ def get_model(num_classes=2, dropout_rate=0.5):
     nn.Linear(512, num_classes)
   )
 
+    # 凍結所有參數
+  for param in model.parameters():
+    param.requires_grad = False
+
+  # 只解凍最後自定義的 fc 層 (nn.Sequential 部分)
+  for param in model.fc.parameters():
+    param.requires_grad = True
+
   return model
